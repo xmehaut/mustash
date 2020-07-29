@@ -47,5 +47,7 @@ abstract class SharingState<T extends StatefulWidget> extends State<T> {
   }
 
   @override
-  void didChangeDependencies() {}
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+  }
 }
