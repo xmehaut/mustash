@@ -35,11 +35,13 @@ This subclass may be named a Controller and implement other methods than value a
 ex:
 
     class MyObject {
+      MyObject(this.counter)
+      
       int counter;
     }
     
     
-    class Controller extends ValueHolder<MyObject> {
+    class MyController extends ValueHolder<MyObject> {
        void increment() {
          value.counter+=1;
          _updateListeners();
@@ -47,6 +49,9 @@ ex:
     
        int get count => value.counter;
     }
+    
+    var anObject = MyObject(0);
+    var myController = Controller(anObject);
     
 ## SharingWidget class
 
