@@ -23,11 +23,12 @@ To create a valueholder, do simply this :
      var aValueHolder = ValueHolder<int>(0);
      
 It creates in this exemple a valueholder around an int value which
-is itself initialzed to 0;
+is itself initialized to 0;
 
 To access the internal value, we just have to do :
-var aValue = aValueHolder.value ;
-aValueHolder.value = aValue;
+
+    var aValue = aValueHolder.value ;
+    aValueHolder.value = aValue;
 
 The ValueHolder class may be subclassed when the internal value is for instance an object instead of terminal value.
 This subclass may be named a Controller and implement other methods than value and value()
