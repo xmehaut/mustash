@@ -13,6 +13,7 @@ Its other caracteristics is its lightweight... only two classes : SharingState a
 For help getting started with Flutter, view our 
 [online documentation](https://flutter.dev/docs), which offers tutorials, 
 samples, guidance on mobile development, and a full API reference.
+For french speakers, a good post on states in Flutter: [Widget states](https://www.didierboelens.com/fr/2018/06/widget-state-context-inheritedwidget/)
 
 ## ValueHolder class
 A ValueHolder is simply a wrapper around a value.
