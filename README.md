@@ -83,6 +83,39 @@ ex :
        }
      }
      
+## Where declaring the shared values?
+
+You have to find first the place in the the widget tree above the children widget will share the values.
+For instance, if we have an application containing for instance a main stetafull page containing in the 
+subtree two other statefull widgets having to share values, we'll define these values there.
+
+    class MyHomePageState extends State<MyHomePage> {
+      // we create the shared value holder and we initialize it directly
+      ValueHolder<int> counter = ValueHolder<int>(0);
+
+But how to access them in the chil widgets? By simply using the GlobalKey mechanism :
+
+    class MyApp extends StatelessWidget {
+      // This global key will be used to get the valueholders in the WidgetStates
+      static GlobalKey<MyHomePageState> myhomepageKey;
+    
+      // This widget is the root of your application.
+      @override
+      Widget build(BuildContext context) {
+        myhomepageKey = GlobalKey<MyHomePageState>();
+        return MaterialApp(
+          title: 'Flutter Demo',
+          home: MyHomePage(key: myhomepageKey, title: 'Flutter Demo Home Page'),
+        );
+      }
+    }
+    
+The access in the subtree will be donne simply by :
+
+    var counter = (MyApp.myhomepageKey.currentState).counter;
+    
+Nothing else.
+     
 ##  Example
 
 An example is available in _bin/simple_example.dart_
