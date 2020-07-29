@@ -72,3 +72,7 @@ ex :
              );
        }
      }
+     
+##  Example
+
+An example is available in _bin/simple_example.dart_
