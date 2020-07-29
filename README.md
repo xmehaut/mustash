@@ -65,7 +65,7 @@ ex :
            subscribeTo(counter);
            
            //we use the value holder
-            var val = counter.data;
+            var val = counter.value;
             return Text(
                '$val',
                 style: Theme.of(context).textTheme.headline4,

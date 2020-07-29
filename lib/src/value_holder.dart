@@ -42,9 +42,9 @@ class ValueHolder<T> {
   List<State> dependents;
   T _data;
 
-  T get data => _data;
+  T get value => _data;
 
-  void set data(T aValue) {
+  void set value(T aValue) {
     _data = aValue;
     _updateListeners();
   }

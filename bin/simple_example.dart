@@ -89,7 +89,7 @@ class CountDisplayerState extends SharingState<CountDisplayer> {
     // the state component subscribe to the valueholder, i.e. it becomes a listener of the valueholder
     subscribeTo(counter);
     // we use the value holder
-    var val = counter.data;
+    var val = counter.value;
     return Text(
       '$val',
       style: Theme.of(context).textTheme.headline4,
@@ -122,8 +122,8 @@ class ActionButtonState extends SharingState<ActionButton> {
   }
 
   void increment() {
-    int value = counter.data + 1;
-    counter.data = value;
+    int value = counter.value + 1;
+    counter.value = value;
   }
 
   @override

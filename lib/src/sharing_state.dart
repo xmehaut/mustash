@@ -13,7 +13,7 @@ import 'package:flutter/material.dart';
 //            // the state component subscribe to the valueholder, i.e. it becomes a listener of the valueholder
 //            subscribeTo(counter);
 //            // we use the value holder
-//             var val = counter.data;
+//             var val = counter.value;
 //             return Text(
 //                '$val',
 //                 style: Theme.of(context).textTheme.headline4,
