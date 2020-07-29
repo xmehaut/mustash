@@ -1,8 +1,8 @@
 name: mustash
 description: Multiple-State Sharing Framework
 version: 0.0.1
-author:
-homepage:
+author: Xavier Mehaut
+homepage: https://github.com/xmehaut/mustash
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
