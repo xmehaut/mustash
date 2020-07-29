@@ -4,7 +4,7 @@ Multi-State Sharing Framework
 
 ## Getting Started
 
-Mustash (for Multi-State Sharing framework) is a very simple framework and pattern for handling shared states 
+Mustash (for **Mu**lti-**Sta**te **Sh**aring framework) is a very simple framework and pattern for handling shared states 
 between widgets in Flutter. It is far less rich than Mobx, Redux, BLoC and so on... But it is also simpler 
 to understand and to implement while doing mainly the job. 
 
